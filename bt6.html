@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="bt6.css">
+</head>
+<body>
+<form action="8">
+    <h1 id="loveQuestion" >Do you love me?</h1>
+  <div id="btnYes" >
+      <input type="button"  value="Yes queen of my heart!" onclick="yesClick()"/>
+  </div>
+    <div id="btnNo">
+        <input type="button"  value="No,please!" onmouseover="noHover()"/>
+    </div>
+
+</form>
+<script>
+  function yesClick() {
+    alert('Anh có phải là Kim Tae Hyung không?');
+  }
+ function noHover() {
+   var x = Math.floor(Math.random()  * innerWidth);
+   var y = Math.floor(Math.random() * innerHeight);
+     document.getElementById("btnNo").style.left = x + "px";
+     document.getElementById("btnNo").style.top = y + "px";
+ }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeO05RiP7Mg_8XGFlZiAo8IZ5386-0Xr-FwA&usqp=CAU" style="position: absolute;left: 0;top: o" width="80px" height="100px">
+    <input onclick="init()" type="button" value="Click Me" />
+
+</form>
+<script>
+    function upArrowPressed() {
+     let element=document.getElementById("click");
+     element.style.top=parseInt(element.style.top)-5+'px';
+    }
+    function downArrowPressed() {
+        let element=document.getElementById('click')
+        element.style.top=parseInt(element.style.top)+5+'px'
+
+    }
+    function leftArrowPressed() {
+        let element=document.getElementById('click');
+        element.style.left=parseInt(element.style.left)-5+'px';
+
+    }
+    function rightArrowPressed() {
+        let element=document.getElementById('click')
+        element.style.left=parseInt(element.style.left)+5+'px'
+
+    }
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed()
+                break;
+            case 39:
+                rightArrowPressed()
+                break;
+            case 38:
+                upArrowPressed()
+                break;
+            case 40:
+                downArrowPressed()
+                break;
+
+        }
+        function docReady() {
+            window.addEventListener('keydown', moveSelection)
+            }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let weight=+prompt('nhập số cân nặng của bé vào đi')
+ let height=+prompt('nhập chiều cao đi bấy bề')
+  let bmi=weight/(height^2)
+  // (bmi<18)?alert('underweight'):(bmi<25)?alert('normal'):(bmi<30)?alert('overweight'):alert('obese')
+  // document.write('bmi',bmi)
+ if (bmi<18){
+     document.write('underweight');
+ } else  if ( bmi>18&&bmi<25){
+     document.write('normal')
+  }  if(bmi>25&&bmi<30){
+     document.write('overweight');
+ }else if(bmi>30) {
+     document.write('obese');
+     }
+</script>
+</body>
+</html>

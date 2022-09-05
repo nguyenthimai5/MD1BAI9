@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bt1-->
+<!--<script>-->
+<!--  let a=+prompt('nhập độ c')-->
+<!--   let f=a*(9/5)+32-->
+<!--document.write('f',f)-->
+<!--</script>-->
+
+<!--bt2-->
+<!--<script>-->
+<!--  let a=+prompt('nhập số met')-->
+<!--  let ft=a*3.2808-->
+<!--  document.write('ft',ft)-->
+<!--</script>-->
+
+<!--bt3-->
+<!--<script>-->
+<!--  let a=+prompt('nhập độ dài')-->
+<!--  let dienTichHinhVuong=a*a-->
+<!--  document.write('dienTichHinhVuong',dienTichHinhVuong)-->
+<!--</script>-->
+
+
+<!--bt4-->
+<!--<script>-->
+<!--  let a=+prompt('nhập chiều rộng')-->
+<!--  let b=+prompt('nhập chiều dài')-->
+<!--  let dienTich= a*b-->
+<!--  document.write('dienTich',dienTich)-->
+<!--</script>-->
+
+<!--bt5-->
+<!--<script>-->
+<!--    let a=+prompt('nhập chiều cao')-->
+<!--    let b=+prompt('nhập chiều dài cạnh đáy')-->
+<!--    let dienTichTamGiacVuong=1/2*(a*b)-->
+<!--    document.write('dienTichTamGiacVuong',dienTichTamGiacVuong)-->
+
+<!--</script>-->
+
+<!--bt6-->
+<!--<h2>tìm nghiệm của pt bậc nhất</h2>-->
+<!--Hệ số a: <input id="a" type="text">-->
+<!--Hệ số b: <input id="b" type="text">-->
+<!--<button value="tinh" onclick="tinhPtb1()">Check</button>-->
+<!--<p id="ketQua"></p>-->
+<!--<script>-->
+<!--function tinhPtb1() {-->
+<!--    let a = parseInt(document.getElementById('a').value);-->
+<!--    let b = parseInt(document.getElementById('b').value);-->
+<!--    if (a == 0 && b == 0){-->
+<!--       document.getElementById('ketQua').innerHTML='Phương trình vô số nghiệm'-->
+<!--    }-->
+<!--    else if (a != 0 && b == 0){-->
+<!--        document.getElementById('ketQua').innerHTML='Phương trình có nghiệm x = 0'-->
+<!--    }-->
+<!--    else if (a == 0 && b != 0){-->
+<!--        document.getElementById('ketQua').innerHTML="Phương trình vô nghiệm"-->
+<!--    }-->
+<!--    else {-->
+<!--        document.getElementById('ketQua').innerHTML='Phương trình có nghiệm x = ' + (-b/a)-->
+<!--    }-->
+
+<!--}-->
+
+<!--</script>-->
+
+<!--bt7-->
+<h2>Tính nghiệm của pt bậc 2</h2>
+Hệ số a: <input id="a" type="text"><br>
+Hệ số b: <input id="b" type="text"><br>
+Hệ số c: <input id="c" type="text"><br>
+<button value="tinh" onclick="ptb2()">check</button><br>
+<p id="ketQua1"></p>
+<p id="ketQua2"></p>
+<p id="ketQua3"></p>
+<script>
+ function ptb2() {
+     let a =parseInt(document.getElementById('a').value)
+     let b =parseInt(document.getElementById('b').value)
+     let c =parseInt(document.getElementById('c').value)
+     let delta=(b*b)-(4*a*c)
+     if (delta==0){
+        document.getElementById('ketQua1').innerHTML= 'pt có nghiệm kép: x='+(-b/2*a)
+
+     }else if (delta>0){
+         document.getElementById('ketQua1').innerHTML='pt có hai nghiệm phân biệt là:'
+         document.getElementById('ketQua2').innerHTML='x1='+(-b+Math.sqrt(delta)/2*a)
+         document.getElementById('ketQua3').innerHTML=' x2='+(-b-Math.sqrt(delta)/2*a)
+     }
+     else if (delta<0){
+         document.getElementById('ketQua1').innerHTML='pt vô ngiệm vì delta='+delta
+     }
+ }
+
+</script>
+
+<!--bt8-->
+<!--<script>-->
+<!-- let a=+prompt('nhập độ tuổi của bạn')-->
+
+<!-- if (a>=0&&a<=120){-->
+<!--     alert('bạn là người ')-->
+<!-- } else {-->
+<!--     alert('chịu á ! Mi là cái chi tau không biết')-->
+<!-- }-->
+<!--</script>-->
+
+
+<!--bt9-->
+<!--<script>-->
+<!--    let a=+prompt('nhập cạnh a')-->
+<!--    let b=+prompt('nhập cạnh b')-->
+<!--    let c=+prompt('nhập cạnh c')-->
+<!--    if (a>0&&b>0&&c>0&&a+b>c&&a+c>b&&b+c>a){-->
+<!--        alert('đây là một tam giác')-->
+<!--    }else {-->
+<!--        alert('đây không phải là một tam giác')-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--bt10-->
+<!--<script>-->
+<!--    let nangLuongDien=+prompt('nhập lượng năng điện tiêu thụ')-->
+<!--    let donGiaDien=1.536-->
+<!--    let giaDienTieuThu=nangLuongDien*donGiaDien-->
+<!--    document.write('Giá điện tiêu thụ là:'+giaDienTieuThu)-->
+
+<!--</script>-->
+
+
+<!--bt12-->
+<!--<script>-->
+<!--   let P=prompt('nhập số tiền vốn gốc ban đầu')-->
+<!--   let r =prompt('nhập lãi suất hàng năm')-->
+<!--   let n =prompt('số tiền lãi được nhập gốc mỗi năm')-->
+<!--   let t =prompt('số năm tiền được gửi ')-->
+<!--   let A= P*(1+r/n)^n*t-->
+<!--  document.write('lãi kép hằng năm là:'+A)-->
+
+<!--</script>-->
+
+
+</body>
+</html>

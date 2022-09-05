@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <input id="thang" type="text">
+    <button type="button" value="Tính số ngày" onclick="ngay()">tính số ngày</button>
+<p id="ketQua"></p>
+<script>
+function ngay() {
+    let x = parseInt(document.getElementById('thang').value);
+    switch (x) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            document.getElementById('ketQua').innerHTML = 'tháng có 31 ngày'
+            break;
+        case 2:
+            document.getElementById('ketQua').innerHTML = 'tháng có 28 hoạc 29 ngày'
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            document.getElementById('ketQua').innerHTML = 'tháng có 30 ngày'
+            break;
+        default:
+            document.getElementById('ketQua').innerHTML="có tháng đó đâu";
+            break;
+    }
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
