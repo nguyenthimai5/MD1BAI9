@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="bt6.css">
 </head>
 <body>
-<form action="8">
+
     <h1 id="loveQuestion" >Do you love me?</h1>
   <div id="btnYes" >
       <input type="button"  value="Yes queen of my heart!" onclick="yesClick()"/>
@@ -15,14 +15,16 @@
         <input type="button"  value="No,please!" onmouseover="noHover()"/>
     </div>
 
-</form>
+
 <script>
   function yesClick() {
+      console.log(innerWidth,innerHeight)
     alert('Anh có phải là Kim Tae Hyung không?');
   }
  function noHover() {
-   var x = Math.floor(Math.random()  * innerWidth);
-   var y = Math.floor(Math.random() * innerHeight);
+
+   var x = Math.floor(Math.random()  * 400 );
+   var y = Math.floor(Math.random() * 400);
      document.getElementById("btnNo").style.left = x + "px";
      document.getElementById("btnNo").style.top = y + "px";
  }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="fast" type="range" min="0" max="5" value="0" onclick="changeFast()">Fast <br>
+<input id="good" type="range" min="0" max="5" value="0" onclick="changeGood()">Good <br>
+<input id="cheap" type="range" min="0" max="5" value="0" onclick="changeCheap()">Cheap <br>
+
+<script>
+  let fast=document.getElementById('fast');
+  let good=document.getElementById('good');
+  let cheap=document.getElementById('cheap');
+  let isFast= false;
+  let isGood=false;
+  let  isCheap=false;
+  function changeFast() {
+    isFast=!isFast
+    if (isFast){
+      fast.value=5
+    }else {
+      fast.value=0
+    }
+    if (isFast&&isGood){
+      isCheap=false;
+      cheap.value=0;
+    }
+  }
+  function changeGood() {
+    isGood=!isGood;
+    if (isGood){
+      good.value=5
+    }else {
+      good.value=0
+    }
+    if (isGood&&isCheap){
+      isFast=false;
+      fast.value=0
+    }
+
+  }
+  function changeCheap() {
+    isCheap=!isCheap
+    if (isCheap){
+      cheap.value=5
+    }else {
+      cheap.value=0
+    }
+    if (isCheap&&isFast){
+      isGood=false;
+      good.value=0
+    }
+
+  }
+  // let count=0;
+  //    function changeFast()  {
+  //         document.getElementById('n1').value=5;
+  //         count++;
+  //         if(count==2){
+  //             document.getElementById('n1').value=0;
+  //             count=0;
+  //
+  //
+
+
+
+</script>
+</body>
+</html>
